@@ -1,10 +1,8 @@
-package com.cflwork.dao;
+package com.cflwork.service;
 
 import com.cflwork.vo.User;
-import org.springframework.stereotype.Repository;
 
-@Repository
-public interface UserMapper {
+public interface UserService{
     int deleteByPrimaryKey(Integer userId);
 
     int insert(User record);
